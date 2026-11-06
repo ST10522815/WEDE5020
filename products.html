@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Products | Mpho's Fashion</title>
+    <meta name="description" content="Shop affordable T-shirts, jeans, dresses, hoodies, sneakers and caps at Mpho's Fashion.">
+    <meta name="keywords" content="buy clothes South Africa, affordable T-shirts, jeans, dresses, hoodies, sneakers, caps">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">MPHO'S FASHION</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <span class="cart-count">Cart: <span id="cart-count">0</span></span>
+</header>
+
+<main class="section">
+    <h1>Our Products</h1>
+    <p>Find your favourite fashion items at affordable prices.</p>
+
+    <label for="product-search">Search for a product</label>
+    <input type="search" id="product-search"
+           placeholder="Search T-shirts, jeans, dresses...">
+
+    <p id="search-message" aria-live="polite"></p>
+
+    <div class="products-grid" id="products-grid">
+
+        <article class="product-card" data-name="T-shirt">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=700"
+                 alt="Casual cotton T-shirt">
+            <h2>T-shirt</h2>
+            <p>R149.99</p>
+            <button class="btn add-cart" data-product="T-shirt">Add to Cart</button>
+        </article>
+
+        <article class="product-card" data-name="Jeans">
+            <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=700"
+                 alt="Blue denim jeans">
+            <h2>Jeans</h2>
+            <p>R299.99</p>
+            <button class="btn add-cart" data-product="Jeans">Add to Cart</button>
+        </article>
+
+        <article class="product-card" data-name="Dress">
+            <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=700"
+                 alt="Elegant fashion dress">
+            <h2>Dress</h2>
+            <p>R249.99</p>
+            <button class="btn add-cart" data-product="Dress">Add to Cart</button>
+        </article>
+
+        <article class="product-card" data-name="Hoodie">
+            <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=700"
+                 alt="Comfortable casual hoodie">
+            <h2>Hoodie</h2>
+            <p>R349.99</p>
+            <button class="btn add-cart" data-product="Hoodie">Add to Cart</button>
+        </article>
+
+        <article class="product-card" data-name="Sneakers">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700"
+                 alt="Red casual sneakers">
+            <h2>Sneakers</h2>
+            <p>R399.99</p>
+            <button class="btn add-cart" data-product="Sneakers">Add to Cart</button>
+        </article>
+
+        <article class="product-card" data-name="Cap">
+            <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=700"
+                 alt="Fashion baseball cap">
+            <h2>Cap</h2>
+            <p>R99.99</p>
+            <button class="btn add-cart" data-product="Cap">Add to Cart</button>
+        </article>
+
+    </div>
+
+    <p id="cart-message" class="form-response" aria-live="polite"></p>
+</main>
+
+<footer>
+    <p>&copy; 2026 Mpho's Fashion. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
