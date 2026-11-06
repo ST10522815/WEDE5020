@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Mpho's Fashion</title>
+    <meta name="description" content="Contact Mpho's Fashion for product enquiries, prices and customer support. We would love to hear from you.">
+    <meta name="keywords" content="contact Mpho's Fashion, fashion enquiries, customer support, clothing South Africa">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">MPHO'S FASHION</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <span class="cart-count">Cart: <span id="cart-count">0</span></span>
+</header>
+
+<main class="section">
+    <h1>Contact Us</h1>
+    <p>Have a question? Complete the form below and we will help you.</p>
+
+    <div class="contact-details">
+        <h2>Customer Support</h2>
+        <p>Email: <a href="mailto:mphosfashion@example.com">mphosfashion@example.com</a></p>
+        <p>Location reference: Pretoria Central, South Africa</p>
+    </div>
+
+    <form id="contact-form">
+        <label for="contact-name">Full name</label>
+        <input type="text" id="contact-name" required minlength="2">
+
+        <label for="contact-email">Email address</label>
+        <input type="email" id="contact-email" required>
+
+        <label for="contact-subject">Subject</label>
+        <input type="text" id="contact-subject" required minlength="3">
+
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" required minlength="10"></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+        <p id="contact-response" class="form-response" aria-live="polite"></p>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 Mpho's Fashion. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
